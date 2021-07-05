@@ -1,0 +1,12 @@
+burma14.tsp
+ulysses22.tsp
+bayg29.tsp
+att48.tsp
+berlin52.tsp
+st70.tsp
+gr96.tsp
+kroA100.tsp
+kroB100.tsp
+kroC100.tsp
+kroD100.tsp
+kroE100.tsp
