@@ -138,7 +138,7 @@ def mTSPD(nombre,tau_T,tau_D,arcos,m,n):# n=nodos #m=camiones
     # 26
     mdl += X[('s','r')] == 0
     # SOLUCION
-    status = mdl.solve() # resolver el problema# resolver el problema
+    status = mdl.solve() # resolver el problema
     salida=[]
     for v in mdl.variables(): 
         if v.varValue !=0:
@@ -202,7 +202,7 @@ def TSP(nombre,tau_T,arcos,n):# n=nodos #m=camiones
         mdl += X[(i,i)] == 0    
     mdl += X[('s','r')] == 0
     # SOLUCION
-    status = mdl.solve() # resolver el problema# resolver el problema
+    status = mdl.solve() # resolver el problema
     salida=[]
     for v in mdl.variables(): 
         if v.varValue !=0:
