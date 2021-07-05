@@ -823,10 +823,10 @@ def ADI(tau_T,tau_D,camiones,clientes):
         # print(Z_best)
     return T_R_best,D_P_best,Z_best
 
+#DIRECCION ABSOLUTA DE LA CARPETA "instancias"
 directorio="C:\\Users\\usuario\\Documents\\UNIVERSIDAD\\SEXTO\\TALLER DE OPTIMIZACION\\TRABAJO\\instancias\\"
 
-# print(pl.listSolvers(onlyAvailable=True))
-#HEURISTICA
+#mTSPD vs TSP
 r1=open(directorio+'ciudades\\resultados_ciudades.txt','w')
 r1_=open(directorio+'ciudades\\resultados_ciudades_rutas.txt','w')
 r1.write('Problema,Camiones,Objetivo mTSPD,Tiempo de Ejecución mTSPD,Objetivo TSP,Tiempo de Ejecución TSP\n')
@@ -857,7 +857,7 @@ for i in ['calama','concepcion','santiago']:
         r1.write(str(i)+','+str(camiones)+','+str(obj_mTSPD)+','+str(t_eje_mTSPD)+','+str(obj_TSP)+','+str(t_eje_TSP)+'\n')
 r1.close()
 r1_.close()
-#TSPLIB
+#HEURISTICA - TSPLIB
 f=open(directorio+'tsplib\\nombres_tsp_lib.txt','r')
 r2=open(directorio+'tsplib\\resultados_tsp_lib.txt','w')
 r2.write('Problema,Camiones,Objetivo Promedio,Mejor Objetivo,Tiempo de Ejecución Promedio\n')
